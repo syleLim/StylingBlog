@@ -5,12 +5,16 @@ import PropTypes 			from 'prop-types'
 
 import PackGridBox from "./PackGridBox"
 
+import { PackGridStyle } from "styles"
+
 class PackGrid extends React.Component {
     render () {
         return (
-            <div>
+            <PackGridStyle>
                 <PackGridBox/>
-            </div>
+				<PackGridBox/>
+				<PackGridBox/>
+            </PackGridStyle>
         )
     };
 }

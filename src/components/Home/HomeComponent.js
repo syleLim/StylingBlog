@@ -9,7 +9,7 @@ import { Title
 class HomeComponent extends React.Component {
     render () {
         return (
-            <div>
+            <div style={{textAlign:"center"}}>
                 <Title/>
 				<PackDiv/>
             </div>

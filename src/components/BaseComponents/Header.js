@@ -11,7 +11,7 @@ class Header extends React.Component {
 
         return (
             <HeaderStyle>
-                {logo}
+                <p style={{fontWeight:"bold"}}>{logo}</p>
             </HeaderStyle>
         )
     };
@@ -22,7 +22,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-	logo : "No logo"	
+	logo : "No logo in Header"	
 }
 
 export default Header;

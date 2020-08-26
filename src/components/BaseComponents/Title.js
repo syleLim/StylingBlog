@@ -3,31 +3,26 @@ import { Route }			from 'react-router-dom'
 import ImmutablePropTypes	from 'react-immutable-proptypes'
 import PropTypes 			from 'prop-types'
 
+import { TitleStyle }	from "styles";
+
 class Title extends React.Component {
     render () {
+		const { title } = this.props;
+
         return (
-            <div>
-                Title
-            </div>
+            <TitleStyle>
+                {title}
+            </TitleStyle>
         )
     };
 }
 
 Title.propTypes = {
-	/*
-		Set props type check
-		Use ImmutalbePropTypes, PropTypes module
-		Example :
-			user : PropTyps.string
-	*/
+	title	: PropTypes.string,
 }
 
-Title.defaultPros = {
-	/*
-		Set Default props if no props input
-		Exampel
-			user : 'No data. please check user field'
-	*/
+Title.defaultProps = {
+	title	: "No Title in Title"
 }
 
 export default Title;

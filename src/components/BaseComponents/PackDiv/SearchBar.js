@@ -3,12 +3,14 @@ import { Route }			from 'react-router-dom'
 import ImmutablePropTypes	from 'react-immutable-proptypes'
 import PropTypes 			from 'prop-types'
 
+import { SearchBarStyle }	from 'styles'
+
 class SearchBar extends React.Component {
     render () {
         return (
-            <div>
+            <SearchBarStyle>
                 SearchBar
-            </div>
+            </SearchBarStyle>
         )
     };
 }

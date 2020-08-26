@@ -3,12 +3,14 @@ import { Route }			from 'react-router-dom'
 import ImmutablePropTypes	from 'react-immutable-proptypes'
 import PropTypes 			from 'prop-types'
 
+import { PackGridBoxStyle } from "styles"
+
 class PackGridBox extends React.Component {
     render () {
         return (
-            <div>
+            <PackGridBoxStyle>
                 PackGridBox
-            </div>
+            </PackGridBoxStyle>
         )
     };
 }

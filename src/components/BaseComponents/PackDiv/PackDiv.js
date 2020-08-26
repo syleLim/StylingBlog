@@ -7,33 +7,27 @@ import SearchBar from "./SearchBar"
 import PackGrid from './PackGrid'
 import PackList from './PackList'
 
+import { PackDivStyle } from 'styles'
+
 class PackDiv extends React.Component {
     render () {
+		const { isGrid } = this.props
+
         return (
-            <div>
+            <PackDivStyle>
 				<SearchBar/>
-                <PackGrid/>
-				<PackList/>
-            </div>
+                {isGrid ? <PackGrid/> : <PackList/>}
+            </PackDivStyle>
         )
     };
 }
 
 PackDiv.propTypes = {
-	/*
-		Set props type check
-		Use ImmutalbePropTypes, PropTypes module
-		Example :
-			user : PropTyps.string
-	*/
+	isGrid : PropTypes.bool,
 }
 
-PackDiv.defaultPros = {
-	/*
-		Set Default props if no props input
-		Exampel
-			user : 'No data. please check user field'
-	*/
+PackDiv.defaultProps = {
+	isGrid : true,
 }
 
 export default PackDiv;

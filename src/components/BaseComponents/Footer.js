@@ -3,12 +3,14 @@ import { Route }			from 'react-router-dom'
 import ImmutablePropTypes	from 'react-immutable-proptypes'
 import PropTypes 			from 'prop-types'
 
+import { FooterStyle }	from "styles"
+
 class Footer extends React.Component {
     render () {
         return (
-            <div>
+            <FooterStyle>
                 Footer
-            </div>
+            </FooterStyle>
         )
     };
 }
